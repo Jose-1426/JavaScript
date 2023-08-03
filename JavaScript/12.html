@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var peso, altura, r;
+
+        peso = parseFloat(window.prompt("Insira o seu peso (em kg): "));
+        altura = parseFloat(window.prompt("Insira a sua altura (em metros): "));
+
+        r = peso / (altura * altura);
+
+        if (r < 20) {
+            document.write("Você está abaixo do peso.");
+        } else if (20 <= r && r < 25) {
+            document.write("Você está no peso ideal.");
+        } else {
+            document.write("Você está acima do peso.");
+        }
+    </script>
+</body>
+</html>

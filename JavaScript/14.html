@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var A, B, C, hypotenuse, sumOfSquares;
+
+        A = parseFloat(window.prompt("Insire o valor de A: "));
+        B = parseFloat(window.prompt("Insire o valor de B: "));
+        C = parseFloat(window.prompt("Insire o valor de C: "));
+
+        hypotenuse = Math.max(A, B, C);
+
+        if (hypotenuse === A) {
+            sumOfSquares = B * B + C * C;
+        } else if (hypotenuse === B) {
+            sumOfSquares = A * A + C * C;
+        } else {
+            sumOfSquares = A * A + B * B;
+        }
+
+        if (sumOfSquares === hypotenuse * hypotenuse) {
+            document.writeln("Os valores formam um triângulo retângulo.");
+        } else {
+            document.writeln("Os valores NÃO formam um triângulo retângulo.");
+        }
+    </script>
+</body>
+</html>

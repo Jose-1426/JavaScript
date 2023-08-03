@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+</head>
+<body>
+    <script lang="JavaScript">
+        function displayTabuada(valor) {
+            document.write("<h2>Tabuada do " + valor + "</h2>");
+            document.write("<table border='1'>");
+            for (var i = 1; i <= 10; i++) {
+                var resultado = valor * i;
+                document.write("<tr><td>" + valor + " x " + i + "</td><td>=</td><td>" + resultado + "</td></tr>");
+            }
+            document.write("</table>");
+        }
+
+        var startValue = 1;
+        var endValue = 20;
+        var rows = 4;
+        var cols = 4;
+
+        for (var i = startValue; i <= endValue; i++) {
+            displayTabuada(i);
+            if (i % (rows * cols) === 0) {
+                document.write("<br>"); 
+            }
+        }
+    </script> 
+</body>
+</html>

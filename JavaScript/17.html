@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var valor;
+
+        valor = parseInt(window.prompt("Insira um valor positivo: "));
+
+        while (valor <= 0 || isNaN(valor)) {
+            valor = parseInt(window.prompt("Por favor, insira um valor positivo válido: "));
+        }
+
+        document.write("<h2>Tabuada do " + valor + "</h2>");
+
+        for (var i = 1; i <= 10; i++) {
+            var resultado = valor * i;
+            document.write(valor + " x " + i + " = " + resultado + "<br>");
+        }
+    </script> 
+</body>
+</html>

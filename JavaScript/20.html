@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var a = 1;
+        var b = 1;
+
+        document.write("<h2>Primeiros 30 valores da série de Fibonacci:</h2>");
+        document.write(a + "<br>");
+        document.write(b + "<br>");
+
+        for (var i = 3; i <= 30; i++) {
+            var c = a + b;
+            document.write(c + "<br>");
+            a = b;
+            b = c;
+        }
+    </script> 
+</body>
+</html>
